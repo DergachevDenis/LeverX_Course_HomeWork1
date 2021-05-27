@@ -1,39 +1,39 @@
 # LeverX_Course_HomeWork1
 Starting a java project from the console
 
-<h3>Скачиваем проект с GitHub</h3>
+<h3>Downloading the project from GitHub</h3>
 <ul>
-<li> Переходим по <a  href = "https://github.com/DergachevDenis/LeverX_Course_HomeWork1">ссылке</a>.</li>
+<li> Follow the <a  href = "https://github.com/DergachevDenis/LeverX_Course_HomeWork1">link</a>.</li>
 
-<li> Нажимаем на зеленую кнопку <i>Code</i>, затем на всплывшем окне нажимаем <i>Download ZIP</i>.</li>
+<li>Click on the green <i>Code</i> button, then click <i>Download ZIP</i> on the pop-up window.</li>
 
-<li> Ждём пока скачается наш ZIP файл, затем разархивируем в нужную нам директорию.</li>
+<li>We are waiting for our ZIP file to download, then unzip it into the directory we need.</li>
 </ul>
 
 
-<h3>Компилируем и запускаем наш java проект</h3>
+<h3>Compile and run our java project</h3>
 <ul>
-<li> В командной строке переходим на диск, где сохранён наш репозиторий, с помощью команды [имя_тома]: (Например <code>H:</code>). </li>
+<li> At the command line, go to the disk where our repository is saved using the command [disk_name]: (For example <code>H:</code>). </li>
 
-<li> В командной строке указываем полный путь, до папки <code>src</code> с помощью команды <code>cd</code> 
+<li> In the command line, specify the full path to the <code>src</code> folder using the <code>cd</code> command
 
-(Например: <code>cd H:/Java/LeverX_courseJava/HomeWork1</code>). Учтите, командная строка чувствительна к регистру.</li>
+(For example: <code>cd H:/Java/LeverX_courseJava/HomeWork1</code>). Please note the command line is case-sensitive.</li>
 
-<li> Находясь в директории где хранится папка <code>src</code>, скачанная с GitHub, выполните команду:
+<li> Being in the directory where the <code>src</code> folder is downloaded from GitHub, run the command:
 
 <code>javac -d classes src/com/dergachev/homework1/Main.java</code>. 
 
-Результатом выполнения этой команды, будет создание новой директории <code>classes</code> в каталоге <code>H:/Java/LeverX_courseJava/HomeWork1</code> в котором автоматически создатся структура каталогов как и в <code>src</code> c откомпилированым файлом <code>Main.class</code></li>
+The result of this command will be the creation of a new <code>classes</code> directory in the <code>H:/Java/LeverX_courseJava/HomeWork1</code>  directory in which the directory structure will be automatically created as in <code>src</code> with the compiled <code>Main.class</code> file</li>
 
-<li> Что бы запустить данную java программу, мы должны находиться в каталоге в котором находится наша директория <code>classes</code>, затем в командной строке выполняем команду <code>java -cp ./classes com.dergachev.homework1.Main</code>
+<li> To run this java program, we must be in the directory in which our <code>classes</code> directory is located, then on the command line we execute the command <code>java -cp ./classes com.dergachev.homework1.Main</code>
 
-Результатом выполнения данной команды будет вывод строки в консоль: <code>Hello, my friend</code>.</li>
+The result of executing this command will be the output of the line to the console: <code>Hello, my friend</code>.</li>
 
-<li> Что бы создать JAR файл переходим в директорию <code>classes</code>  c помощью команды <code>cd classes</code>, а затем используем команду 
+<li> To create a JAR file, go to the <code>classes</code>  directory using the <code>cd classes</code> command, and then use the command 
 
 <code>jar cfe homework.jar com.dergachev.homework1.Main com/dergachev/homework1/Main.class</code>.</li>
 
-<li> Что бы запустить JAR файл, находясь в директории с созданным <code>homework.jar</code> файлом выполняем команду 
+<li>To run the JAR file, while in the directory with the created <code>homework.jar</code> file, execute the command 
 
-<code>java -jar homework.jar</code>. Результатом выполнения данный команды будет вывод строки в консоль: <code>Hello, my friend</code>.</li>
+<code>java -jar homework.jar</code>. The result of executing this command will be the output of the line to the console: <code>Hello, my friend</code>.</li>
 </ul>
